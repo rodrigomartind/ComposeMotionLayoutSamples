@@ -1,0 +1,72 @@
+{
+  ConstraintSets: {
+    start: {
+      content_video: {
+        width: '90%',
+        height: 80,
+        bottom: ['parent','bottom', 16],
+        end: ['parent','end'],
+        start: ['parent','start'],
+        custom: {
+          background: '#33FF6D'
+        }
+      },
+      video_view: {
+        width: 120,
+        height: 'spread',
+        top: ['content_video', 'top'],
+        bottom: ['content_video', 'bottom'],
+        start: ['content_video', 'start'],
+      },
+      title: {
+        width: 'spread',
+        height: 'wrap',
+        top: ['content_video', 'top', 8],
+        start: ['video_view', 'end', 8]
+      },
+      description: {
+        width: 'spread',
+        height: 'wrap',
+        top: ['title', 'bottom', 4],
+        start: ['video_view', 'end', 8]
+      }
+    },
+    end: {
+      content_video: {
+        width: 'spread',
+        height: 380,
+        top: ['parent','top'],
+        end: ['parent','end'],
+        start: ['parent','start'],
+        custom: {
+          background: '#FFD633'
+        }
+      },
+      video_view: {
+        width: 'spread',
+        height: 280,
+        top: ['parent', 'top'],
+        start: ['parent', 'start'],
+        end: ['parent', 'end']
+      },
+      title: {
+        width: 'spread',
+        height: 'wrap',
+        top: ['video_view', 'bottom', 16],
+        start: ['parent', 'start', 16]
+      },
+      description: {
+        width: 'spread',
+        height: 'wrap',
+        top: ['title', 'bottom', 4],
+        start: ['parent', 'start', 16]
+      }
+    }
+  },
+  Transitions: {
+    default: {
+      from: 'start',
+      to: 'end'
+    }
+  }
+}

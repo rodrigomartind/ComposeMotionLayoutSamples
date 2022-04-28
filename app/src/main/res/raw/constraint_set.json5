@@ -1,0 +1,30 @@
+{
+  id_of_view: {
+    width: 100,
+    height: 200,
+//    'wrap' - wrap content
+//    'preferWrap' - wrap content if meeting constraints
+//    'spread' - fill the space define by the constraints
+//    'parent' - size of parents
+//    percent (e.g. '25%') - percentage of the parents size
+//    Ratio (e.g. '16:9') - constrain this side to be the enforce the aspect ratio
+    top: ['parent','top', 16],
+    bottom:['parent','bottom', 16],
+    start: ['parent','start', 16],
+    end: ['parent','end', 16],
+    circular: ['center', 30, 100],
+    centerHorizontally: 'parent',
+    centerVertically: 'parent',
+    translationX: 'float',
+    translationY: 'float',
+    translationZ: 'float',
+    elevation: 'float',
+    alpha: '1.0',
+    rotationX: '0.0',
+    rotationY: '0.0',
+    rotationZ: '0.0',
+    scaleX: '1.0',
+    scaleY: '1.0',
+    visibility: 'visible/invisible/gone'
+  }
+}

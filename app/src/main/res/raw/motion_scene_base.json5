@@ -1,0 +1,26 @@
+{
+  Design:{},
+  Variables:{},
+  ConstraintSets:{
+    start: {
+      id_of_view: {
+
+      }
+    },
+    end: {
+      id_of_view: {
+      }
+    }
+  },
+  Transitions: {
+    from: 'start',
+    to: 'end',
+    default:{
+      KeyFrames:{
+        KeyPositions: {},
+        KeyAttributes: {},
+        KeyCycles: {},
+      }
+    }
+  }
+}

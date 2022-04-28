@@ -1,0 +1,30 @@
+{
+  ConstraintSets: {
+    start: {
+      box_demo: {
+        width: 200,
+        height: 200,
+        end: ['parent','end', 16],
+        top: ['parent','top', 16]
+      }
+    },
+    end: {
+      box_demo: {
+        width: 200,
+        height: 200,
+        bottom: ['parent','bottom', 16],
+        start: ['parent','start', 16]
+      }
+    }
+  },
+  Transitions: {
+    default: {
+      from: 'start',
+      to: 'end',
+      KeyFrames: {
+        KeyAttributes: [
+        ]
+      }
+    }
+  }
+}
